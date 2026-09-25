@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3378f5">
+  <title>隐私政策与关于 — 星光错题本 (MindCheck)</title>
+  <meta name="description" content="星光错题本（MindCheck）隐私政策：秉持“本地优先、保护未成年人隐私”原则，100% 离线单机运行，零数据上云，不设用户账号。">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-initial-view="privacy">
+
+  <!-- Navigation Header (Matches Mockup) -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand-link" href="index.html" data-view-link="home">
+        <img class="brand-icon" src="assets/icon-192.png" alt="星光错题本图标" width="36" height="36">
+        <span class="brand-name" data-copy="appName">星光错题本</span>
+      </a>
+
+      <nav class="nav-pill-bar" aria-label="主要导航">
+        <a href="index.html" class="pill-item" data-view-link="home" data-copy="homeNav">首页</a>
+        <a href="index.html#features" class="pill-item" data-copy="featuresNav">功能特性</a>
+        <a href="index.html#a4-print" class="pill-item" data-copy="printNav">A4 试卷</a>
+        <a href="support.html" class="pill-item" data-view-link="support" data-copy="supportNav">帮助中心</a>
+        <a href="privacy.html" class="pill-item is-active" data-view-link="privacy" data-copy="privacyNav">隐私政策</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-pill">
+          <svg class="globe-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+          <select id="languageSelect" class="lang-select" aria-label="切换语言"></select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-container">
+      <div class="page-header-card">
+        <div class="page-badge-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+          </svg>
+        </div>
+        <h1 data-copy="privacyTitle">隐私政策与关于</h1>
+        <p class="lead" data-copy="privacyLead">
+          星光错题本（MindCheck）秉持“本地优先、保护未成年人隐私”的设计原则。本政策详细说明本应用如何处理您的数据以及您所拥有的权利。
+        </p>
+        <div class="meta-date" data-copy="updatedDate">最后更新：2026 年 9 月 24 日</div>
+      </div>
+
+      <div id="privacySections" class="sections-wrapper">
+        <article class="section-card">
+          <div class="section-card-header">
+            <span class="section-idx">01</span>
+            <h2>核心原则：100% 离线与本地优先</h2>
+          </div>
+          <div class="section-card-content">
+            星光错题本为纯单机架构应用，不自建任何云端用户中心或后台服务器。本应用不要求您注册账号，亦不收集您的姓名、电话、邮箱、学号或设备唯一标识符等任何个人身份信息。您录入的所有错题照片、去笔迹图片、裁剪数据、分类及标签，均仅存储在您当前 iOS/iPadOS 设备的独立应用沙盒内。
+          </div>
+        </article>
+
+        <article class="section-card">
+          <div class="section-card-header">
+            <span class="section-idx">02</span>
+            <h2>本地离线文字识别 (OCR)</h2>
+          </div>
+          <div class="section-card-content">
+            题目文字提取完全依托苹果操作系统内置的原生 Vision 框架在设备端纯离线运行。整个识别过程无需连接互联网，绝不向任何第三方云端或大语言模型服务传输您的考卷图像或文本内容。
+          </div>
+        </article>
+
+        <article class="section-card">
+          <div class="section-card-header">
+            <span class="section-idx">03</span>
+            <h2>系统权限调用说明</h2>
+          </div>
+          <div class="section-card-content">
+            应用仅在您主动使用相应功能时申请系统权限：<br>
+            • <b>相机权限 (Camera)</b>：仅用于您主动拍摄试卷和错题纸面，用于题目裁切与笔迹修补；<br>
+            • <b>照片图库权限 (Photo Library)</b>：仅用于您主动从相册选择已有试卷图片导入错题本。<br>
+            您可随时在系统【设置 - 星光错题本】中关闭相应权限，关闭后不影响查看和打印已有错题。
+          </div>
+        </article>
+
+        <article class="section-card">
+          <div class="section-card-header">
+            <span class="section-idx">04</span>
+            <h2>数据导出、备份与彻底删除</h2>
+          </div>
+          <div class="section-card-content">
+            • <b>自主导出</b>：您可将选中的错题自主排版并生成 A4 试卷 PDF，通过系统分享面板发送或使用 AirPrint 打印；<br>
+            • <b>彻底销毁</b>：在错题本中删除错题或清空分类时，对应的本地元数据及高清图像文件将被立即物理删除，不留缓存；<br>
+            • <b>卸载销毁</b>：若您在设备上卸载本应用，保存在本应用沙盒内的全部错题与图片将随之被系统彻底清除。
+          </div>
+        </article>
+
+        <article class="section-card">
+          <div class="section-card-header">
+            <span class="section-idx">05</span>
+            <h2>未成年人保护特别声明</h2>
+          </div>
+          <div class="section-card-content">
+            本应用面向广大学生用户设计。我们严格遵守《中华人民共和国个人信息保护法》及相关未成年人网络保护规定，坚决不收集任何儿童与青少年用户数据，不含任何形式的广告、商业追踪 SDK 或应用内大数据个性化推荐。
+          </div>
+        </article>
+
+        <article class="section-card">
+          <div class="section-card-header">
+            <span class="section-idx">06</span>
+            <h2>官方网站与技术支持托管</h2>
+          </div>
+          <div class="section-card-content">
+            本官方网站由静态托管服务（如 GitHub Pages）提供服务。当您访问网站时，托管服务商可能会依照其自身的隐私政策记录标准网络请求信息（如 IP 地址与浏览器版本）。本网站未植入任何第三方广告脚本、分析代码或跨站 Cookie。
+          </div>
+        </article>
+
+        <article class="section-card">
+          <div class="section-card-header">
+            <span class="section-idx">07</span>
+            <h2>联系我们与政策变更</h2>
+          </div>
+          <div class="section-card-content">
+            若本政策发生重大调整，我们将在本页面及 App 更新说明中予以公布。如对隐私保护有任何疑问，或需要技术支持，请发送邮件至官方客服邮箱：<b>diowang@gmail.com</b>。
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand-link" href="index.html" data-view-link="home">
+          <img class="brand-icon" src="assets/icon-192.png" alt="星光错题本图标" width="32" height="32">
+          <span class="brand-name" data-copy="appName">星光错题本</span>
+        </a>
+
+        <ul class="footer-nav">
+          <li><a href="index.html" data-view-link="home" data-copy="homeNav">首页</a></li>
+          <li><a href="privacy.html" class="is-active" data-view-link="privacy" data-copy="privacyNav">隐私政策</a></li>
+          <li><a href="support.html" data-view-link="support" data-copy="supportNav">技术支持</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright" data-copy="footerRights">
+          © 2026 星光错题本 (MindCheck). 保留所有权利。
+        </div>
+        <div class="footer-disclaimer" data-copy="footerDisclaimer">
+          Apple、iPad、iPadOS、Apple Pencil 与 AirPrint 是 Apple Inc. 在美国和其他国家或地区的注册商标。
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3378f5">
+  <title>技术支持与帮助中心 — 星光错题本 (MindCheck)</title>
+  <meta name="description" content="星光错题本 (MindCheck) 官方技术支持与帮助中心：常见使用疑问排查、Apple Pencil 擦除技巧、A4 试卷打印指南与客服邮箱 diowang@gmail.com。">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-initial-view="support">
+
+  <!-- Navigation Header (Matches Mockup) -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand-link" href="index.html" data-view-link="home">
+        <img class="brand-icon" src="assets/icon-192.png" alt="星光错题本图标" width="36" height="36">
+        <span class="brand-name" data-copy="appName">星光错题本</span>
+      </a>
+
+      <nav class="nav-pill-bar" aria-label="主要导航">
+        <a href="index.html" class="pill-item" data-view-link="home" data-copy="homeNav">首页</a>
+        <a href="index.html#features" class="pill-item" data-copy="featuresNav">功能特性</a>
+        <a href="index.html#a4-print" class="pill-item" data-copy="printNav">A4 试卷</a>
+        <a href="support.html" class="pill-item is-active" data-view-link="support" data-copy="supportNav">帮助中心</a>
+        <a href="privacy.html" class="pill-item" data-view-link="privacy" data-copy="privacyNav">隐私政策</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-pill">
+          <svg class="globe-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+          <select id="languageSelect" class="lang-select" aria-label="切换语言"></select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-container">
+      <div class="page-header-card">
+        <div class="page-badge-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
+          </svg>
+        </div>
+        <h1 data-copy="supportTitle">技术支持与帮助中心</h1>
+        <p class="lead" data-copy="supportLead">
+          获取星光错题本（MindCheck）的使用指南、常见问题排查与官方支持通道。
+        </p>
+      </div>
+
+      <!-- Contact Banner -->
+      <div class="support-contact-box">
+        <div class="support-contact-info">
+          <h3 data-copy="supportContactTitle">需要进一步协助？</h3>
+          <p data-copy="supportContactDesc">如果您在使用过程中遇到任何疑问、异常现象或改进建议，欢迎随时给我们发送邮件，我们通常会在 24~48 小时内为您回复。</p>
+        </div>
+        <a href="mailto:diowang@gmail.com?subject=%E6%98%9F%E5%85%89%E9%94%99%E9%A2%98%E6%9C%AC%E7%94%A8%E6%88%B7%E6%94%AF%E6%8C%81" class="support-email-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          <span data-copy="supportSendEmail">发送邮件给开发者</span>
+        </a>
+      </div>
+
+      <!-- FAQ List -->
+      <div class="section-header" style="margin-bottom: 24px; text-align: left;">
+        <h2 style="font-size: 1.4rem; font-weight: 800;" data-copy="supportFaqTitle">常见问题解答 (FAQ)</h2>
+      </div>
+
+      <div id="supportFaqs" class="sections-wrapper">
+        <article class="section-card">
+          <div class="section-card-header">
+            <span class="section-idx">Q1</span>
+            <h2>星光错题本需要联网或者注册账号吗？</h2>
+          </div>
+          <div class="section-card-content">
+            不需要。星光错题本是 100% 纯单机离线应用。无需注册账号，无需登录，在没有网络（如飞行模式或校园无网环境）下所有功能（拍照裁切、文字识别、去手写痕迹、A4 组卷预览）均能完全正常使用。
+          </div>
+        </article>
+
+        <article class="section-card">
+          <div class="section-card-header">
+            <span class="section-idx">Q2</span>
+            <h2>为什么录题时提示需要相机或相册权限？</h2>
+          </div>
+          <div class="section-card-content">
+            应用需要调用硬件相机拍摄试卷原件，或从系统相册选取之前拍摄好的题目。如果此前不小心拒绝了授权，您可以前往 iPadOS【设置】-> 滑动找到【星光错题本】-> 开启【相机】与【照片】读取权限即可恢复正常。
+          </div>
+        </article>
+
+        <article class="section-card">
+          <div class="section-card-header">
+            <span class="section-idx">Q3</span>
+            <h2>使用 Apple Pencil 涂抹去痕时有哪些实用技巧？</h2>
+          </div>
+          <div class="section-card-content">
+            在第 4 步涂抹去痕画布中：<br>
+            1. 可以点击画笔粗细切换（细 10pt、中 20pt、粗 36pt）以快速擦除大面积笔迹；<br>
+            2. 支持双指缩放和拖移画布，以便对微小的红笔对勾或数字进行精准擦除；<br>
+            3. 顶部工具栏提供撤销 (Undo) 和重做 (Redo)，不小心涂错了可以随时回退。
+          </div>
+        </article>
+
+        <article class="section-card">
+          <div class="section-card-header">
+            <span class="section-idx">Q4</span>
+            <h2>A4 试卷排版与 AirPrint 打印如何使用？</h2>
+          </div>
+          <div class="section-card-content">
+            在组卷中心选好题目并点击“试卷预览”后，点击右上角的“打印”按钮即可唤起系统 AirPrint 面板。只要您的 iPad 与支持 AirPrint 的无线打印机连接在同一个 Wi-Fi 局域网下，即可直接出卷。您也可以点击“导出 PDF”保存到“文件”App，或发送到微信/QQ/电脑上通过有线打印机打印。
+          </div>
+        </article>
+
+        <article class="section-card">
+          <div class="section-card-header">
+            <span class="section-idx">Q5</span>
+            <h2>更换新 iPad 或备份数据时应该如何操作？</h2>
+          </div>
+          <div class="section-card-content">
+            因为星光错题本不设云端服务器，所有错题数据保存在 iPad 本地沙盒。当您更换新设备时，建议使用 iPadOS 原生的【系统整机迁移】（将新旧两台 iPad 靠近即可一键克隆数据）或使用电脑通过 Finder / iTunes 进行完整整机加密备份恢复，这样所有错题和图片均会无损同步到新设备。
+          </div>
+        </article>
+
+        <article class="section-card">
+          <div class="section-card-header">
+            <span class="section-idx">Q6</span>
+            <h2>如何反馈使用中的 Bug 或建议新功能？</h2>
+          </div>
+          <div class="section-card-content">
+            我们非常重视每一位学生和家长的反馈！您可以直接发送邮件至 <b>diowang@gmail.com</b>，如果遇到界面显示问题，建议附上问题截图或屏幕录像，我们将尽快跟进处理并在后续版本中优化升级。
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand-link" href="index.html" data-view-link="home">
+          <img class="brand-icon" src="assets/icon-192.png" alt="星光错题本图标" width="32" height="32">
+          <span class="brand-name" data-copy="appName">星光错题本</span>
+        </a>
+
+        <ul class="footer-nav">
+          <li><a href="index.html" data-view-link="home" data-copy="homeNav">首页</a></li>
+          <li><a href="privacy.html" data-view-link="privacy" data-copy="privacyNav">隐私政策</a></li>
+          <li><a href="support.html" class="is-active" data-view-link="support" data-copy="supportNav">技术支持</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright" data-copy="footerRights">
+          © 2026 星光错题本 (MindCheck). 保留所有权利。
+        </div>
+        <div class="footer-disclaimer" data-copy="footerDisclaimer">
+          Apple、iPad、iPadOS、Apple Pencil 与 AirPrint 是 Apple Inc. 在美国和其他国家或地区的注册商标。
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>
